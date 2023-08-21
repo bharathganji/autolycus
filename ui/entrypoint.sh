@@ -5,7 +5,7 @@ if [[ ! -e './node_modules' ]]; then
 fi
 
 if [[ ! $API_URL ]];then
-    API_URL="http://localhost:5000/api"
+    API_URL="http://localhost:5001/api"
 fi
 
 # update API URL in the file
