@@ -1,18 +1,6 @@
 version: '3'
 
 services:
-  proxy:
-    image: nginx:latest
-    volumes:
-      - ./proxy/nginx.conf:/etc/nginx/conf.d/default.conf
-    ports:
-      - 32770:80
-      - 32769:443
-    links:
-      - api
-      - ui
-    restart: on-failure:3
-
   api:
       build:
         context: ./api
