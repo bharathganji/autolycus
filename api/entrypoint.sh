@@ -4,7 +4,7 @@ if [[ ! -e 'logs' ]]; then
     mkdir logs
 fi
 
-HOST="0.0.0.0"; PORT="5000"; WORKERS="4";
+HOST="0.0.0.0"; PORT="5001"; WORKERS="4";
 ACCESS_LOG="logs/gunicorn-access.log";
 ERROR_LOG="logs/gunicorn-error.log";
 TIMEOUT=300;
