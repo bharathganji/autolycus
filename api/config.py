@@ -20,7 +20,7 @@ class Config(object):
     DEFAULT_SAVE_PATH = "/downloads"
     DEBUG = False
     HOST = "0.0.0.0"
-    PORT = 5000
+    PORT = 5001
 
 class DevelopmentConfig(Config):
     SQLALCHEMY_DATABASE_URI = "sqlite:///autolycus.sqlite3"
